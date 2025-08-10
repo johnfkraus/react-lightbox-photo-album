@@ -1,3 +1,19 @@
+naming convention:
+
+In the code:
+
+{name}.{number}.{width}x{height}.jpg
+
+Filename:
+
+{name}.{number}.{width}x{height}.jpg
+
+{name}.{number}.{width}x{height}.{width}w.jpg
+
+
+
+
+
 birdhouse.7943.3024x4032.4032w.jpg
 dishes.8073.4032x3024.4032w.jpg
 hotel.8016.3024x4032.4032w.jpg
