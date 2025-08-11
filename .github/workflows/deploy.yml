@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 22 # Or your desired Node.js version
       - name: Get Date
-        run: DATE=`date` && sed "s/A thing made by John Kraus/A thing made by John Kraus - $DATE/g" main.tsx
+        run: DATE=`date` && sed "s/A thing made by John Kraus/A thing made by John Kraus - $DATE/g" src/main.tsx
       - name: Install Dependencies
         run: npm install
       - name: Build Project
