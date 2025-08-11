@@ -1,4 +1,4 @@
-name: Deploy to Surge
+name: Build and Deploy to Surge
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22 # Or your desired Node.js version
-      - name: Get Date
+      - name: Insert Build Date on main page
         run: DATE=`date` && sed "s/A thing made by John Kraus/A thing made by John Kraus - Built on $DATE/g" src/main.tsx >> src/main2.tsx && cp src/main2.tsx src/main.tsx
       - name: Install Dependencies
         run: npm install
