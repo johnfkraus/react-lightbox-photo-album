@@ -2,6 +2,8 @@ import type { Photo } from "react-photo-album";
 
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
+const bucket = "https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/"
+
 function imageLink(path: string, width: number, height: number, size: number, extension: string) {
   // console.log(`photos/${path}.${width}x${height}.${size}w.${extension}`);
   console.log(`https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/${path}.${width}x${height}.${size}w.${extension}`);
