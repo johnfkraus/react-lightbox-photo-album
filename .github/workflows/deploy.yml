@@ -1,0 +1,25 @@
+name: Deploy to Surge
+
+on:
+  push:
+    branches:
+      - dev1n
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 22 # Or your desired Node.js version
+      - name: Install Dependencies
+        run: npm install
+      - name: Build Project
+        run: npm run build # Optional, if your project requires a build step
+      - name: Install Surge CLI
+        run: npm install -g surge
+      - name: Deploy to Surge
+        run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}

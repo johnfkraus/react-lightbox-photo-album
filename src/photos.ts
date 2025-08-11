@@ -6,8 +6,10 @@ const bucket = "https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/"
 
 function imageLink(path: string, width: number, height: number, size: number, extension: string) {
   // console.log(`photos/${path}.${width}x${height}.${size}w.${extension}`);
-  console.log(`https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/${path}.${width}x${height}.${size}w.${extension}`);
-  return `https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/${path}.${width}x${height}.${size}w.${extension}`;
+  // console.log(`https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/${path}.${width}x${height}.${size}w.${extension}`);
+  console.log(`${bucket}${path}.${width}x${height}.${size}w.${extension}`);
+  return `${bucket}${path}.${width}x${height}.${size}w.${extension}`;
+  // return `https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/${path}.${width}x${height}.${size}w.${extension}`;
   // return `../photos/${path}.${width}x${height}.${size}w.${extension}`;
   // return `../photos/meeks_8143.jpeg`;
   // return `https://images.react-photo-album.com/hiking/${path}.${width}x${height}.${size}w.${extension}`;
@@ -24,9 +26,9 @@ const photos = [
   { src: "frank-and-veronica.0001.1600x1200.jpeg", alt: "Frank and Veronica" },
   { src: "emyla.7743.4032x3024.jpeg", alt: "Emyla" },
   { src: "postcards.7742.3024x4032.jpg", alt: "Postcards" },
-  { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
+  { src: "meeks.8143.2400x3600.jpg", alt: "Meeks 2" },
   { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
-  { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse"},
+  { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse 2" },
   { src: "palace.8004.4032x3024.jpg", alt: "Palace" },
   { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
   { src: "wallocheese.7977.4032x3024.jpg", alt: "Wall O' Cheese, Munich" },
@@ -34,7 +36,7 @@ const photos = [
   { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
   { src: "postcards.7742.3024x4032.jpg", alt: "Postcards" },
   { src: "palace.8004.4032x3024.jpg", alt: "Palace" },
-  { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse"},
+  { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse 3"},
   //{ src: "wallocheese.7977.4032x3024.jpg", alt: "Wall O' Cheese, Munich" },
   { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
   { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
