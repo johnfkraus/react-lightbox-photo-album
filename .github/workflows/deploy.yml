@@ -3,7 +3,7 @@ name: Deploy to Surge
 on:
   push:
     branches:
-      - dev1n
+      - dev1
 
 jobs:
   deploy:

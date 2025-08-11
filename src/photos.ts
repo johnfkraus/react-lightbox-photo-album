@@ -10,19 +10,17 @@ function imageLink(path: string, width: number, height: number, size: number, ex
   console.log(`${bucket}${path}.${width}x${height}.${size}w.${extension}`);
   return `${bucket}${path}.${width}x${height}.${size}w.${extension}`;
   // return `https://photo-album-22101.s3.us-east-1.amazonaws.com/photos/${path}.${width}x${height}.${size}w.${extension}`;
-  // return `../photos/${path}.${width}x${height}.${size}w.${extension}`;
-  // return `../photos/meeks_8143.jpeg`;
   // return `https://images.react-photo-album.com/hiking/${path}.${width}x${height}.${size}w.${extension}`;
 }
 
 const photos = [
-  // { src: "image01.0822d131.2400x1734.jpg", alt: "Hiking boots" },
+  // see 'filenames.md' for tips on how to refer to photos in this list
   { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
   { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
-   { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse"},
+  { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse"},
   { src: "palace.8004.4032x3024.jpg", alt: "Palace" },
-  { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
-  { src: "wallocheese.7977.4032x3024.jpg", alt: "Wall O' Cheese, Munich" },
+  { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel 1" },
+  { src: "wallocheese.7977.4032x3024.jpg", alt: "Wall O' Cheese, Munich 1" },
   { src: "frank-and-veronica.0001.1600x1200.jpeg", alt: "Frank and Veronica" },
   { src: "emyla.7743.4032x3024.jpeg", alt: "Emyla" },
   { src: "postcards.7742.3024x4032.jpg", alt: "Postcards" },
@@ -30,14 +28,13 @@ const photos = [
   { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
   { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse 2" },
   { src: "palace.8004.4032x3024.jpg", alt: "Palace" },
-  { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
+  { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel 2" },
   { src: "wallocheese.7977.4032x3024.jpg", alt: "Wall O' Cheese, Munich" },
   { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
   { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
   { src: "postcards.7742.3024x4032.jpg", alt: "Postcards" },
   { src: "palace.8004.4032x3024.jpg", alt: "Palace" },
   { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse 3"},
-  //{ src: "wallocheese.7977.4032x3024.jpg", alt: "Wall O' Cheese, Munich" },
   { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
   { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
   { src: "dishes.8073.4032x3024.jpg", alt: "Dishes2"},
@@ -46,7 +43,6 @@ const photos = [
   // { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
   // { src: "wallocheese.7977.4032x3024.jpg", alt: "Wall O' Cheese, Munich, Germany" },
   // { src: "postcards.7742.3024x4032.jpg", alt: "Postcards 2" },
-
   // { src: "image02.7561b5a4.2400x3600.jpg", alt: "Purple petaled flowers near a mountain" },
   // { src: "image03.334d8e07.2400x1600.jpg", alt: "A person pointing at a beige map" },
   // { src: "image04.635260bf.2400x1601.jpg", alt: "Two hikers walking toward a snow-covered mountain" },
