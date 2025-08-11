@@ -16,6 +16,7 @@ function imageLink(path: string, width: number, height: number, size: number, ex
 const photos = [
   // see 'filenames.md' for tips on how to refer to photos in this list
   { src: "weenie-beenie.5954.4032x3024.jpg", alt: "Weenie Beenie" },
+  { src: "sea-turtle.333.5568x4176.5568w.jpg", alt: "Sea Turtle, Puerto Rico"},
   { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
   { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
   { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse"},
