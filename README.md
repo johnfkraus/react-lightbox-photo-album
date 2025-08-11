@@ -7,3 +7,10 @@ The starting point for this website project was the lightbox example in this rep
 Your photos for the photo album need to be uploaded to S3 or similar location.
 
 Deployed to Surge.sh
+
+To get the SURGE_TOKEN, run:
+
+surge token
+
+Configure SURGE_TOKEN as a Github secret.
+
