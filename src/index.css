@@ -48,7 +48,8 @@ main {
 /* Footer.css */
 .app-footer {
   text-align: center; /* This centers the text horizontally */
-  padding: 10px;
+  padding: 15px;
   font-size: 0.8rem;
+  color: rgb(0, 112, 243);
   /*background-color: #f0f0f0;*/
 }
