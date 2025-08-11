@@ -7,9 +7,11 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "move": "mv ./src/CNAME ./dist/",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && surge ./dist/ johns-photo-album.surge.sh"
   },
   "dependencies": {
     "react": "^19.1.0",

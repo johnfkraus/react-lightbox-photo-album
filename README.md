@@ -2,8 +2,8 @@
 
 First draft.
 
-Original source: https://github.com/igordanchenko/react-photo-album
+The starting point for this website project was the lightbox example in this repository: https://github.com/igordanchenko/react-photo-album
 
-Photos uploaded to AWS S3.
+Your photos for the photo album need to be uploaded to S3 or similar location.
 
 Deployed to Surge.sh
