@@ -20,6 +20,6 @@ jobs:
       - name: Install Surge CLI
         run: npm install -g surge
       - name: Deploy to Surge
-        run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
