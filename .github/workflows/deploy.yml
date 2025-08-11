@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22 # Or your desired Node.js version
+      - name: Get Date
+        run: date >> datefile.html
       - name: Install Dependencies
         run: npm install
       - name: Build Project
