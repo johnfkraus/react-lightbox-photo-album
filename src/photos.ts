@@ -1,7 +1,6 @@
 import type { Photo } from "react-photo-album";
 
 // adapted from:
-// OPTIONAL:
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 const bucket = "https://photo-album-22101.s3.us-east-1.amazonaws.com/srcset/"
@@ -16,7 +15,8 @@ const photos = [
   { src: "meeks.3684.3024x4032.jpg", alt: "Meeks" },
   { src: "bronze.3623.1493x1613.jpg", alt: "Bronze figurines" },
   { src: "Engelhartszell_an_der_Donau_Innviertel_Austria.1000.4032x3024.jpg", alt: "Engelhartszell_an_der_Donau_Innviertel_Austria" },
-  // { src: "amery.3611.3024x4032.jpg", alt: "Amery, Wisconsin, vase, 1987" },
+  { src: "amery.3611.3024x4032.jpg", alt: "Amery, Wisconsin, vase, 1987" },
+  { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse"},
   // { src: "annapolis.6702.3024x4032.jpg", alt: "Sailing on a schooner in Annapolis, Maryland" },
   // { src: "bronze.3623.1493x1613.jpg", alt: "Bronze figurines" },
   // { src: "buffalo.7161.4032x3024.jpg", alt: "South Dakota buffalo" },
@@ -32,7 +32,7 @@ const photos = [
   // { src: "sea-turtle.333.5568x4176.jpg", alt: "Sea Turtle, Puerto Rico"},
   // { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
   // { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
-  // { src: "birdhouse.7943.3024x4032.jpg", alt: "Birdhouse"},
+
   // { src: "palace.8004.4032x3024.jpg", alt: "Nymphenburg Palace, Munich" },
   // { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
   // { src: "frank-and-veronica.0001.1600x1200.jpeg", alt: "Frank and Veronica" },
