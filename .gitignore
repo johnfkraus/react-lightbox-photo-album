@@ -5,6 +5,16 @@
 dist
 node_modules
 package.json
-photos/
+photos/srcset/
+photos/set1/
+photos/set2/
+photos/start/
+photos/dest/
+photos/renamed/
+
 archives/
+**/archives/
 album-photos/renamed/
+**/__pycache__/
+
+
