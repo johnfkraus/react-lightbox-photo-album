@@ -16,3 +16,10 @@ Configure SURGE_TOKEN as a Github secret.
 
 Commiting changes to main updates the live website using Github actions.
 
+Run in development mode:
+
+npm run dev
+
+Deploy:
+
+npm 
