@@ -13,8 +13,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22 # Or your desired Node.js version
+      - name: Get Date and time
+        run: DATE=`date`
       - name: Insert Build Date in the main page footer
-        run: DATE=`date` && sed "s/A thing made by John Kraus/A thing made by John Kraus - Latest build date: $DATE/g" src/main.tsx >> src/main2.tsx && cp src/main2.tsx src/main.tsx
+        run: sed "s/A thing made by John Kraus/A thing made by John Kraus - Latest build date: $DATE/g" src/main.tsx >> src/main2.tsx && cp src/main2.tsx src/main.tsx
       - name: Install Dependencies
         run: npm install
       - name: Build Project
