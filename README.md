@@ -1,5 +1,7 @@
 # react-lightbox-photo-album
 
+![](phone.png)
+
 The responsive live website is here: https://johns-photo-album.surge.sh/
 
 The starting point for this website project was the lightbox example in this repository: https://github.com/igordanchenko/react-photo-album
