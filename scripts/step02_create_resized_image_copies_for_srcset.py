@@ -26,10 +26,6 @@ def create_resized_copies(start_dir, dest_dir, test=False):
                         print("dest_path:", dest_path)
                     resized_img.save(dest_path, "JPEG")
 
-# start='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/start/'
-# renamed='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/renamed/'
-# dest='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/dest/'
-# create_resized_copies(start, dest)
 
 if __name__ == "__main__":
     test_dir2 = 'photos/test2'

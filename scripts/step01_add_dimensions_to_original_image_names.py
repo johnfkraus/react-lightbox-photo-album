@@ -37,9 +37,6 @@ def rename_images_add_dimensions(start_dir, renamed_dir, test=False):
             new_path = os.path.join(renamed_dir, new_name)
             shutil.copy2(img_path, new_path)
 
-# start='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/start/'
-# renamed='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/renamed/'
-# rename_images_add_dimensions(start, renamed)
 
 if __name__ == "__main__":
     test_dir1 = 'photos/test1'   # original photo named XXXX.YYY.jpg

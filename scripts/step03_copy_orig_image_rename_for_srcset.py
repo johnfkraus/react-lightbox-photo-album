@@ -23,11 +23,6 @@ def copy_and_rename_jpg_images(src_dir, dst_dir, test=False):
             if test:
                 print(f"Copied and renamed: {src_path} -> {dst_path}")
 
-
-# renamed='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/renamed/'
-# dest='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/dest/'
-# copy_and_rename_jpg_images(renamed, dest)
-
 if __name__ == "__main__":
     src_dir = "photos/test2"
     dst_dir = "photos/test3"
