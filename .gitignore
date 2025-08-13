@@ -17,3 +17,5 @@ archives/
 **/archives/
 album-photos/renamed/
 **/__pycache__/
+
+scripts/photos/

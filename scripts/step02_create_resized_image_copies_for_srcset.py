@@ -1,10 +1,11 @@
-# This function will create resized copies of each JPG image in the 'start' directory, saving
-# them in the 'destination' directory with the specified filename format.
+# This function will create a srcset of resized copies of each JPG image
+# in the 'start' directory, saving them in the destination
+# directory with the specified filename format.
 
 import os
 from PIL import Image
 
-def create_resized_copies(start_dir, dest_dir):
+def create_resized_copies(start_dir, dest_dir, test=False):
     widths = [1080, 640, 384, 256, 128, 96, 64, 48]
     if not os.path.exists(dest_dir):
         os.makedirs(dest_dir)
@@ -21,6 +22,8 @@ def create_resized_copies(start_dir, dest_dir):
                     name, ext = os.path.splitext(filename)
                     new_filename = f"{name}.{w}w{ext}"
                     dest_path = os.path.join(dest_dir, new_filename)
+                    if test:
+                        print("dest_path:", dest_path)
                     resized_img.save(dest_path, "JPEG")
 
 # start='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/start/'
@@ -28,3 +31,7 @@ def create_resized_copies(start_dir, dest_dir):
 # dest='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/dest/'
 # create_resized_copies(start, dest)
 
+if __name__ == "__main__":
+    test_dir2 = 'photos/test2'
+    test_dir3 = 'photos/test3'
+    create_resized_copies(test_dir2, test_dir3, test=True)

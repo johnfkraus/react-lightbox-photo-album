@@ -2,9 +2,9 @@ import os
 import shutil
 from PIL import Image
 
-def copy_and_rename_jpg_images(src_dir, dst_dir):
-    # src_dir = 'renamed'
-    # dst_dir = 'destination'
+# add width to the end of the original full-sized image name and copy the
+# renamed image to the 'dst_dir' directory.
+def copy_and_rename_jpg_images(src_dir, dst_dir, test=False):
     if not os.path.exists(dst_dir):
         os.makedirs(dst_dir)
     for filename in os.listdir(src_dir):
@@ -20,9 +20,16 @@ def copy_and_rename_jpg_images(src_dir, dst_dir):
             new_filename = f"{name}.{width}w{ext}"
             dst_path = os.path.join(dst_dir, new_filename)
             shutil.copy2(src_path, dst_path)
-            print(f"Copied and renamed: {src_path} -> {dst_path}")
+            if test:
+                print(f"Copied and renamed: {src_path} -> {dst_path}")
 
 
 # renamed='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/renamed/'
 # dest='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/dest/'
 # copy_and_rename_jpg_images(renamed, dest)
+
+if __name__ == "__main__":
+    src_dir = "photos/test2"
+    dst_dir = "photos/test3"
+    copy_and_rename_jpg_images(src_dir, dst_dir, test=True)
+

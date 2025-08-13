@@ -12,14 +12,18 @@ import os
 from PIL import Image
 import shutil
 
-def rename_images_add_dimensions(start_dir, renamed_dir):
+def rename_images_add_dimensions(start_dir, renamed_dir, test=False):
+    if test:
+        print('cwd =', os.getcwd())
     if not os.path.exists(renamed_dir):
         os.makedirs(renamed_dir)
     for filename in os.listdir(start_dir):
         file_lower = filename.lower()
         if file_lower.endswith('.jpg') or file_lower.endswith('.jpeg'):
             name, ext = os.path.splitext(filename)
-            ext = '.jpg'  # always use .jpg
+            if test:
+                print("name:", name, ", ext:", ext)
+            ext = '.jpg'  # always use .jpg, not .jpeg
             img_path = os.path.join(start_dir, filename)
             try:
                 with Image.open(img_path) as img:
@@ -28,9 +32,17 @@ def rename_images_add_dimensions(start_dir, renamed_dir):
                 print(f"Could not open {filename}: {e}")
                 continue
             new_name = f"{name}.{width}x{height}{ext}"
+            if test:
+                print("new_name: ", new_name)
             new_path = os.path.join(renamed_dir, new_name)
             shutil.copy2(img_path, new_path)
 
 # start='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/start/'
 # renamed='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/renamed/'
 # rename_images_add_dimensions(start, renamed)
+
+if __name__ == "__main__":
+    test_dir1 = 'photos/test1'   # original photo named XXXX.YYY.jpg
+    test_dir2 = 'photos/test2'   # original photo with dimensions added to name
+    # i.e., XXXX.YYY.WIDTHxHEIGHT.jpg
+    rename_images_add_dimensions(test_dir1, test_dir2, test=True)
