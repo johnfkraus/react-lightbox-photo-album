@@ -19,8 +19,9 @@ Your photos for the photo album need to be uploaded to S3 or similar location.  
 The application is deployed to Surge.sh.  A free Surge.sh account is required.  The photos are provided in an AWS S3 bucket.
 
 Once you have a Surge.sh account, to get your SURGE_TOKEN, run:
-
+```shell
 surge token
+```
 
 Configure the SURGE_TOKEN and your unique SURGE_DOMAIN as GitHub secrets.
 
@@ -28,7 +29,9 @@ Commiting changes to the main branch updates the live website by triggering a Gi
 
 To run in development mode:
 
+```shell
 npm run dev
+```
 
 To deploy on Surge.sh:
 
