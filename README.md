@@ -1,6 +1,14 @@
 # react-lightbox-photo-album
 
-<img src="phone.png" width="40%" />
+<table>
+<tr><td>
+<img src="images/phone.png" width="40%" alt="Phone image" />
+</td>
+<td>
+<img src="images/phone2.png" width="40%" alt="Phone image 2" />
+</td>
+</tr>
+</table>
 
 The responsive live website is here: https://johns-photo-album.surge.sh/
 
@@ -14,7 +22,7 @@ Once you have a Surge.sh account, to get your SURGE_TOKEN, run:
 
 surge token
 
-Configure the SURGE_TOKEN and your unique SURGE_DOMAIN as Github secrets.
+Configure the SURGE_TOKEN and your unique SURGE_DOMAIN as GitHub secrets.
 
 Commiting changes to the main branch updates the live website by triggering a GitHub Action configure in the `.github/workflows/deploy.yml` file.  
 
@@ -27,14 +35,14 @@ To deploy on Surge.sh:
 Prerequisites:
 
 - A Surge.sh account and domain (see Surge.sh for details).
-- A Github.com repository for this project.
+- A GitHub.com repository for this project.
 
-In your Github repository, under Settings > Secrets and variables > Repository secrets, configure the following Repository secrets:
+In your GitHub repository, under Settings > Secrets and variables > Repository secrets, configure the following Repository secrets:
 
 SURGE_DOMAIN <br>
 SURGE_TOKEN
 
-Using the following commands, commit the code to the main branch in your Github repository to trigger the .github/workflows/deploy.yml script.
+Using the following commands, commit the code to the main branch in your GitHub repository to trigger the .github/workflows/deploy.yml script.
 ```shell
 git add .
 git commit -m 'your commit message'
