@@ -18,7 +18,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build Project
-        run: npm run build # Optional, if your project requires a build step
+        run: npm run build
       - name: Install Surge CLI
         run: npm install -g surge
       - name: Deploy to Surge

@@ -40,12 +40,14 @@ Prerequisites:
 - A Surge.sh account and domain (see Surge.sh for details).
 - A GitHub.com repository for this project.
 
+Create your own GitHub repository containing this source code.
+
 In your GitHub repository, under Settings > Secrets and variables > Repository secrets, configure the following Repository secrets:
 
 SURGE_DOMAIN <br>
 SURGE_TOKEN
 
-Using the following commands, commit the code to the main branch in your GitHub repository to trigger the .github/workflows/deploy.yml script.
+Using the following commands, commit the code to the main branch in your GitHub repository, which will to trigger the .github/workflows/deploy.yml script.
 ```shell
 git add .
 git commit -m 'your commit message'
