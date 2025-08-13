@@ -1,16 +1,14 @@
-# script for creating srcset image copies
+# script for creating srcset image copies for upload to CDN
 
 import step01_add_dimensions_to_original_image_names
 import step02_create_resized_image_copies_for_srcset
 import step03_copy_orig_image_rename_for_srcset
 import step04_cleanup
 
-start='photos/input/'  # dir must exist before running this code
-renamed='photos/work_in_process/'
-dest='photos/srcset/'
+start='photos/input/'  # this dir must exist before running this code; put the to-be-processed photos here
+renamed='photos/work_in_process/'  # temporary location for renamed version of original photo
+dest='photos/srcset/'  # final output of photo srcset for upload to CDN; there should be nine versions of each photo here
 archives = 'photos/archives/'
-# renamed='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/renamed/'
-# dest='/Users/blauerbock/workspaces/react-photo-album-main/examples/react-lightbox-photo-album/photos/dest/'
 
 if __name__ == "__main__":
     step01_add_dimensions_to_original_image_names.rename_images_add_dimensions(start, renamed)

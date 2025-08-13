@@ -2,7 +2,7 @@
   "name": "react-photo-album-lightbox",
   "description": "React Lightbox Photo Album",
   "version": "0.1.0",
-  "author": "John Kraus, based on work by Igor Danchenko",
+  "author": "John Kraus, based on a Github repo by Igor Danchenko",
   "license": "MIT",
   "private": true,
   "type": "module",

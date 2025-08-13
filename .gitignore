@@ -4,7 +4,6 @@
 .idea
 dist
 node_modules
-package.json
 photos/srcset/
 photos/set1/
 photos/set2/
