@@ -1,6 +1,7 @@
 # react-lightbox-photo-album
 
-![](phone.png)
+
+<img src="phone.png" width="50%">
 
 The responsive live website is here: https://johns-photo-album.surge.sh/
 
