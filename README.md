@@ -2,10 +2,10 @@
 
 <table>
 <tr><td>
-<img src="images/phone.png" width="40%" alt="Phone image" />
+<img src="images/phone.png" width="80%" alt="Phone image" />
 </td>
 <td>
-<img src="images/phone2.png" width="40%" alt="Phone image 2" />
+<img src="images/phone2.png" width="80%" alt="Phone image 2" />
 </td>
 </tr>
 </table>
