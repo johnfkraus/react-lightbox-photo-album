@@ -1,17 +1,15 @@
 {
   "name": "react-photo-album-lightbox",
-  "description": "React Photo Album - Lightbox",
+  "description": "React Lightbox Photo Album",
   "version": "0.1.0",
-  "author": "Igor Danchenko",
+  "author": "John Kraus, based on work by Igor Danchenko",
   "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
-    "move": "mv ./src/CNAME ./dist/",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "npm run build && surge ./dist/ johns-photo-album.surge.sh"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.0",
