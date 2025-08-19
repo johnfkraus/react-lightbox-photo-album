@@ -15,6 +15,8 @@ import shutil
 def rename_images_add_dimensions(start_dir, renamed_dir, test=False):
     if test:
         print('cwd =', os.getcwd())
+    if not os.path.exists(start_dir):
+        os.makedirs(start_dir)
     if not os.path.exists(renamed_dir):
         os.makedirs(renamed_dir)
     for filename in os.listdir(start_dir):
