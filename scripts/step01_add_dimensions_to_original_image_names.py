@@ -34,12 +34,18 @@ def rename_images_add_dimensions(start_dir, renamed_dir, test=False):
             new_name = f"{name}.{width}x{height}{ext}"
             if test:
                 print("new_name: ", new_name)
+                print(f'{{ src: "{new_name}", alt: "A photo" }},')
             new_path = os.path.join(renamed_dir, new_name)
             shutil.copy2(img_path, new_path)
 
+            # append a Typescript snippet to a file for pasting into 'src/photos.tx'
+            code = f'{{ src: "{new_name}", alt: "A photo" }},'
+            with open('filenames-list.txt', 'a') as file:
+                file.write(code + '\n')
+
 
 if __name__ == "__main__":
-    test_dir1 = 'photos/test1'   # original photo named XXXX.YYY.jpg
-    test_dir2 = 'photos/test2'   # original photo with dimensions added to name
+    test_dir1 = 'photos/test/test1'   # original photo named XXXX.YYY.jpg
+    test_dir2 = 'photos/test/test2'   # original photo with dimensions added to name
     # i.e., XXXX.YYY.WIDTHxHEIGHT.jpg
     rename_images_add_dimensions(test_dir1, test_dir2, test=True)
