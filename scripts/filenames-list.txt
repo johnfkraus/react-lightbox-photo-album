@@ -1,6 +1,0 @@
-{ src: "Catedral_of_Esztergom.22.3024x4032.jpg", alt: "A photo" },
-{ src: "meeks.3684.3024x4032.jpg", alt: "A photo" },
-{ src: "Catedral_of_Esztergom.22.3024x4032.jpg", alt: "A photo" },
-{ src: "meeks.3684.3024x4032.jpg", alt: "A photo" },
-{ src: "Catedral_of_Esztergom.22.3024x4032.jpg", alt: "A photo" },
-{ src: "meeks.3684.3024x4032.jpg", alt: "A photo" },

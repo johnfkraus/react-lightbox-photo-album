@@ -25,13 +25,25 @@ const photos = [
     alt: "Catedral of Esztergom, Esztergom, Komárom-Esztergom County, Hungary" },
   { src: "English_Garden.1.3024x4032.jpg", alt: "English Garden, Munich" },
   { src: "hello-kitty-sandals.8330.2113x2340.jpg", alt: "Hello Kitty Sandals" },
+  { src: "IMG_4282.221.3264x2448.jpg", alt: "Fort Marcy cannon" },
+  { src: "IMG_6693.221.2448x3264.jpg", alt: "Cool Prius" },
+  { src: "IMG_5682.221.3264x2448.jpg", alt: "Williamsburg, Virginia" },
+  { src: "IMG_5332.221.3264x2448.jpg", alt: "Charleston classroom" },
+  { src: "IMG_5625.221.2448x3264.jpg", alt: "Big rooster" },
+  { src: "IMG_6343.221.3264x2448.jpg", alt: "Floodwalls in Georgetown" },
+  { src: "big-bird-red-tailed-hawk.221.1140x1791.jpg", alt: "Red-tailed hawk" },
+  { src: "Olympic_Mountains,_Washington_State_Oct._1969.221.843x821.jpg", alt: "Olympic Mountains, 1969" },
+  { src: "IMG_4170.221.2448x3264.jpg", alt: "Fort Marcy, Virginia" },
+  { src: "IMG_5603.221.3264x2448.jpg", alt: "Alligator" },
+  { src: "IMG_5413.221.2448x3264.jpg", alt: "Kalorama" },
+  { src: "IMG_8096.221.3264x2448.jpg", alt: "Potomac River" },
+
 
   // { src: "annapolis.6702.3024x4032.jpg", alt: "Sailing on a schooner in Annapolis, Maryland" },
   // { src: "bronze.3623.1493x1613.jpg", alt: "Bronze figurines" },
   // { src: "buffalo.7161.4032x3024.jpg", alt: "South Dakota buffalo" },
   // { src: "dino-balloon.5224.3024x4032.jpg", alt: "Dinosaur balloon" },
   // { src: "meeks-book.0776.4032x3024.jpg", alt: "Meeks reading" },
-  //
   // { src: "meeks.3A95.1141x642.jpg", alt: "Meeks" },
   // { src: "meeks.693245.3024x4032.jpg", alt: "Meeks" },
   // { src: "meeks.7597.3024x4032.jpg", alt: "Meeks the Cat" },
@@ -40,14 +52,8 @@ const photos = [
   // { src: "weenie-beenie.5954.4032x3024.jpg", alt: "Weenie Beenie" },
   // { src: "sea-turtle.333.5568x4176.jpg", alt: "Sea Turtle, Puerto Rico"},
   // { src: "meeks.8143.2400x3600.jpg", alt: "Meeks" },
-  // { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
-
-  // { src: "palace.8004.4032x3024.jpg", alt: "Nymphenburg Palace, Munich" },
-  // { src: "hotel.8016.3024x4032.jpg", alt: "Munich hotel" },
-  // { src: "frank-and-veronica.0001.1600x1200.jpeg", alt: "Frank and Veronica" },
   // { src: "emyla.7743.4032x3024.jpeg", alt: "Emyla" },
   // { src: "postcards.7742.3024x4032.jpg", alt: "Postcards" },
-  // { src: "dishes.8073.4032x3024.jpg", alt: "Dishes"},
 
 ].map(({ src, ...rest }) => {
   console.log('src = ' + src);
